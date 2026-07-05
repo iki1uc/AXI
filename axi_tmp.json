@@ -1,1 +1,10 @@
+{
+    "tmp_root": "C:/MySystem/TMP/",
+    "tp3": "C:/MySystem/TMP/TP3/",
+    "tp6": "C:/MySystem/TMP/TP6/",
+    "tp9": "C:/MySystem/TMP/TP9/",
+    "default": "TP3",
+    "allowed": ["TP3", "TP6", "TP9"],
+    "scale": true
+}
 
