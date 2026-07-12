@@ -1,38 +1,22 @@
 {
-    "tmp_root": "C:/MySystem/TMP/",
+  "axi-core": {
+    "id": "AXI-CORE-IKI",
+    "level": 1,
+    "structure": "Achsenkern",
+    "signature": "AXI::CORE::IKI"
+  },
 
-    "tp3": "C:/MySystem/TMP/TP3/",
-    "tp6": "C:/MySystem/TMP/TP6/",
-    "tp9": "C:/MySystem/TMP/TP9/",
+  "axes": {
+    "primary": ["X", "Y", "Z"],
+    "secondary": ["T", "S"],
+    "motion": ["MOVE", "STATE", "FLOW"],
+    "tri-core": ["alpha", "beta", "gamma"]
+  },
 
-    "default": "TP3",
-    "allowed": ["TP3", "TP6", "TP9"],
-    "scale": true,
-
-    "transition": {
-        "TP3_to_TP6": true,
-        "TP6_to_TP9": true,
-        "TP9_to_TP3": false
-    },
-
-    "vector_map": {
-        "TP3": 3,
-        "TP6": 6,
-        "TP9": 9
-    },
-
-    "modules": {
-        "TP3": ["TMP", "AXI"],
-        "TP6": ["TMP", "AXI"],
-        "TP9": ["TMP", "AXI"],
-        "ON3": ["LOGIK", "AXI"],
-        "9vec3tor": ["VEC", "AXI"],
-        "pePIneBEL": ["PIPE", "AXI"],
-        "ScanGhost": ["SEC", "AXI"]
-    },
-
-    "nc_link": {
-        "enabled": true,
-        "container": "C:/MySystem/NC/link/AXI.json"
-    }
+  "meta": {
+    "version": "1.0",
+    "created": "2026-07-12",
+    "location": "Hamburg, Deutschland",
+    "system": "AXI"
+  }
 }
