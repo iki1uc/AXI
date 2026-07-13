@@ -1,0 +1,18 @@
+NAME = AXI
+ROOT = iki1uc
+SYSTEM = 6E
+MODUL = AXI
+DIM = AX
+
+ROLLE = Achsenkern / Achsen‑DNA / Routing‑Basis
+FUNKTION = Erzeugt, verwaltet und verbindet alle Achsen im 6×6‑System
+
+POSITION = AX‑Ebene (Achsenkern)
+LINK = D1 (HEAD) + D2 (HTML) + D4 (ANKER) + D5 (API)
+AXI‑DNA = Α64
+AXI‑ATOR = aktiv
+TriAxiom = aktiv
+TMP-LAEUFER = SYQ
+
+STATUS = STABIL
+READY = 100%
