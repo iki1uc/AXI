@@ -1,97 +1,30 @@
-# AXI – Achsenkernsystem
+# AXI – Achsenkernsystem · iki1uc
 
-AXI ist das zentrale Grundsystem für alle Achsenmodule in der gesamten IKI‑Engine‑Struktur.  
-Es bildet die Basis für:
+## Zweck
+AXI ist das zentrale Achsenkernsystem der IKI‑Engine.
+Es erzeugt, verwaltet und verbindet alle Achsen im 6×6‑System
+und bildet die Grundlage für ANKER (D4) und API (D5).
 
-- AXI‑ATOR  
-- RESPO‑AXI‑LINK.NET  
-- RAW‑SYS‑IKI  
-- TriAxiom  
-- 6D‑Router‑Matrix  
-- Achsen‑DNA (Α64)
+## Struktur
+- NAME: AXI
+- DIM: AX
+- DNA: Α64
+- Signatur: AXI::CORE::IKI
+- Achsenmatrix: 6×6 (36 Achsen)
+- Achsenfelder: 64 pro Achse (Α64)
 
-Dieses Repository enthält ausschließlich **eigene**, **neue**, **nicht geliehene** Dateien.
+## Achsen
+- Primär: X, Y, Z
+- Sekundär: T, S
+- Bewegung: MOVE, STATE, FLOW
+- Tri‑Core: alpha, beta, gamma
+- Systemachsen: GEO, FREQ, INPUT, OUTPUT, SET, ANKER, API
 
----
+## Router
+- AXI‑ATOR: aktiv
+- TriAxiom: aktiv
+- RESPO‑AXI‑LINK.NET: verbunden
 
-## 🎯 Zweck des AXI‑Systems
-
-AXI definiert die **Grundstruktur jeder Achse**, bevor sie in andere Systeme weitergeleitet wird.
-
-Es stellt sicher:
-
-- eindeutige Achsen‑Identität  
-- klare Slot‑Zuordnung  
-- Depth‑Definition  
-- Gruppenzugehörigkeit  
-- Engine‑Modus  
-- Routing‑Kompatibilität  
-- 6D‑Matrix‑Erfüllung  
-
-AXI ist die **Wurzel** aller Achsen.
-
----
-
-## 📁 Dateien im Repository
-
-| Datei | Funktion |
-|-------|----------|
-| `index.html` | Einstiegspunkt des AXI‑Systems |
-| `ID.html` | Achsen‑Identitätsmodul (lokal, nicht geliehen) |
-| `axi_tmp.json` | Temporäre Achsenkonfiguration (lokal) |
-| `README.md` | Dokumentation des AXI‑Systems |
-
----
-
-## 🧬 Achsen‑DNA (Basis)
-
-AXI bildet die Grundlage für die Achsen‑DNA:
-
-- X  
-- Y  
-- Z  
-- T  
-- S  
-- MOVE  
-- STATE  
-- FLOW  
-- alpha  
-- beta  
-- gamma  
-
-Jede Achse besitzt:
-
-- Slot  
-- Gruppe  
-- Depth  
-- Signatur  
-- Engine‑Modus  
-
----
-
-## 🔧 Integration in andere Systeme
-
-AXI wird von folgenden Systemen genutzt:
-
-### **AXI‑ATOR**
-Routing‑Modul für Achsenparameter.
-
-### **RESPO‑AXI‑LINK.NET**
-6D‑Router‑Matrix + Achsen‑Weiser + Achsen‑Lage.
-
-### **RAW‑SYS‑IKI**
-RAW‑Ebene für Fehleranalyse und Achsen‑Dispatch.
-
-### **TriAxiom**
-Philosophische Grundstruktur:
-
-1. Struktur erzeugt Ordnung  
-2. Ordnung erzeugt Bewegung  
-3. Bewegung erzeugt System  
-
----
-
-## 📌 Status
-
-AXI ist vollständig eigenständig und bereit für Integration in alle IKI‑Systeme.
-
+## Status
+STATE = STABIL  
+READY = 100%
