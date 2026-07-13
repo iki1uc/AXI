@@ -5,37 +5,11 @@
 <title>AXI – Identität</title>
 
 <style>
-    body {
-        background: #000;
-        color: #0f0;
-        font-family: monospace;
-        padding: 40px;
-    }
-
-    h1 {
-        color: #0f0;
-        letter-spacing: 4px;
-        margin-bottom: 30px;
-    }
-
-    .block {
-        background: #111;
-        border: 1px solid #333;
-        padding: 25px;
-        margin-bottom: 30px;
-        border-radius: 8px;
-    }
-
-    .title {
-        font-size: 22px;
-        color: #0f0;
-        margin-bottom: 10px;
-    }
-
-    ul {
-        list-style: none;
-        padding-left: 0;
-    }
+body { background:#000; color:#0f0; font-family:monospace; padding:40px; }
+h1 { color:#0f0; letter-spacing:4px; margin-bottom:30px; }
+.block { background:#111; border:1px solid #333; padding:25px; margin-bottom:30px; border-radius:8px; }
+.title { font-size:22px; color:#0f0; margin-bottom:10px; }
+ul { list-style:none; padding-left:0; }
 </style>
 </head>
 
@@ -47,26 +21,32 @@
     <div class="title">System‑Identität</div>
     <ul>
         <li>ID: AXI‑CORE‑IKI</li>
-        <li>Level: 1</li>
+        <li>DIM: AX</li>
         <li>Struktur: Achsenkern</li>
+        <li>DNA: Α64</li>
         <li>Signatur: AXI::CORE::IKI</li>
     </ul>
 </div>
 
 <div class="block">
-    <div class="title">Grundachsen</div>
+    <div class="title">Achsen‑Matrix (6×6)</div>
     <ul>
-        <li>X</li>
-        <li>Y</li>
-        <li>Z</li>
-        <li>T</li>
-        <li>S</li>
-        <li>MOVE</li>
-        <li>STATE</li>
-        <li>FLOW</li>
-        <li>alpha</li>
-        <li>beta</li>
-        <li>gamma</li>
+        <li>X, Y, Z</li>
+        <li>T, S, MOVE</li>
+        <li>STATE, FLOW, GEO</li>
+        <li>FREQ, INPUT, OUTPUT</li>
+        <li>SET, ANKER, API</li>
+        <li>alpha, beta, gamma</li>
+    </ul>
+</div>
+
+<div class="block">
+    <div class="title">AXI‑Router</div>
+    <ul>
+        <li>AXI‑ATOR: aktiv</li>
+        <li>TriAxiom: aktiv</li>
+        <li>RESPO‑AXI‑LINK.NET: verbunden</li>
+        <li>TMP‑Läufer: SYQ</li>
     </ul>
 </div>
 
