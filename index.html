@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>AXI – Achsenkernsystem</title>
+<title>AXI – MASTER‑ACHSE · iki1uc</title>
 
 <style>
     body {
@@ -26,25 +26,93 @@
         border-radius: 8px;
     }
 
+    .title {
+        font-size: 22px;
+        color: #6cf;
+        margin-bottom: 10px;
+    }
+
     a {
-        color: #0f0;
+        color: #6cf;
         text-decoration: none;
         font-weight: bold;
+    }
+
+    pre {
+        background: #000;
+        border-left: 3px solid #6cf;
+        padding: 15px;
+        margin-top: 10px;
+        white-space: pre-wrap;
     }
 </style>
 </head>
 
 <body>
 
-<h1>AXI – Achsenkernsystem</h1>
+<h1>AXI – MASTER‑ACHSE · iki1uc</h1>
 
 <div class="block">
-    <p>Willkommen im AXI‑Grundsystem.  
-    Dieses Modul bildet die Basis für alle Achsen in der IKI‑Engine.</p>
+    <div class="title">AXI – Achsenkernsystem</div>
+    <p>AXI ist der zentrale Achsenkern der gesamten IKI‑Engine.</p>
+    <p>Es verbindet alle Achsen, Ebenen, Module und Systeme.</p>
 </div>
 
 <div class="block">
+    <div class="title">AXI‑Identität</div>
     <p><a href="ID.html">→ AXI‑Identität öffnen</a></p>
+</div>
+
+<div class="block">
+    <div class="title">AXI‑DNA (Α64)</div>
+    <pre>
+AXI‑DNA = Α64
+Felder pro Achse = 64
+Achsenmatrix = 6×6
+Dimensionen = 6D
+Rotation = 360°
+Ausnutzung = 100%
+    </pre>
+</div>
+
+<div class="block">
+    <div class="title">Achsenmatrix (6×6)</div>
+    <pre>
+X   Y   Z   T   S   MOVE
+STATE FLOW GEO FREQ INPUT OUTPUT
+SET  ANKER API alpha beta gamma
+    </pre>
+</div>
+
+<div class="block">
+    <div class="title">AXI‑Router</div>
+    <pre>
+AXI‑ATOR = aktiv
+TriAxiom = aktiv
+RESPO‑AXI‑LINK.NET = verbunden
+TMP‑Läufer = SYQ
+    </pre>
+</div>
+
+<div class="block">
+    <div class="title">System‑Module</div>
+    <a href="../HEAD/index.html">HEAD</a>
+    <a href="../HTML/index.html">HTML</a>
+    <a href="../body/index.html">body</a>
+    <a href="../style/index.html">style</a>
+    <a href="../HELP/index.html">HELP</a>
+    <a href="../FREQ/index.html">FREQ</a>
+    <a href="../GEO/index.html">GEO</a>
+    <a href="../ALLin/index.html">ALLin</a>
+    <a href="../ALLout/index.html">ALLout</a>
+    <a href="../SETter/index.html">SETter</a>
+    <a href="../ANKER/index.html">ANKER</a>
+    <a href="../API/index.html">API</a>
+</div>
+
+<div class="block">
+    <div class="title">AXI‑tmp.json</div>
+    <p><a href="axi_tmp.json">→ JSON öffnen</a></p>
 </div>
 
 </body>
