@@ -1,16 +1,26 @@
 {
   "axi-core": {
     "id": "AXI-CORE-IKI",
-    "level": 1,
-    "structure": "Achsenkern",
+    "dim": "AX",
+    "dna": "Α64",
     "signature": "AXI::CORE::IKI"
   },
 
   "axes": {
+    "matrix": "6x6",
+    "fields": 64,
     "primary": ["X", "Y", "Z"],
     "secondary": ["T", "S"],
     "motion": ["MOVE", "STATE", "FLOW"],
-    "tri-core": ["alpha", "beta", "gamma"]
+    "tri-core": ["alpha", "beta", "gamma"],
+    "system": ["GEO", "FREQ", "INPUT", "OUTPUT", "SET", "ANKER", "API"]
+  },
+
+  "router": {
+    "axi-ator": true,
+    "triaxiom": true,
+    "respo-link": true,
+    "tmp-runner": "SYQ"
   },
 
   "meta": {
