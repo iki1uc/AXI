@@ -1,16 +1,127 @@
-<h2>NC‑Achsen</h2>
-<div class="section">
-  <a href="../NC/1/">Achse 1</a>
-  <a href="../NC/2/">Achse 2</a>
-  <a href="../NC/3/">Achse 3</a>
-  <a href="../NC/4/">Achse 4</a>
-  <a href="../NC/5/">Achse 5</a>
-  <a href="../NC/6/">Achse 6</a>
-  <a href="../NC/7/">Achse 7</a>
-  <a href="../NC/8/">Achse 8</a>
-  <a href="../NC/9/">Achse 9</a>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>AXI – Systemkern / RESPO</title>
 
-  <a href="../NC/C/">Center</a>
-  <a href="../NC/Z/">Zustand</a>
-  <a href="../NC/Q/">Query</a>
+<style>
+body { background:#000; color:#0f0; font-family:monospace; padding:20px; }
+h1, h2 { color:#6cf; }
+a { color:#6cf; display:block; margin:6px 0; }
+pre { background:#111; border:1px solid #333; padding:10px; margin-bottom:20px; }
+.section { margin-bottom:30px; }
+
+.rot   { color:#ff4444; }
+.gruen { color:#44ff44; }
+.gelb  { color:#ffff44; }
+</style>
+
+</head>
+<body>
+
+<h1>AXI – Systemkern / RESPO</h1>
+
+<div class="section">
+<pre>
+SYSTEM = AXI
+KONSTELLATION = TMP
+FREQ = 12e
+6D = D2
+360° = aktiv
+NC‑9x9 = bereit
+AXI‑RESPO = aktiv
+</pre>
 </div>
+
+<h2>AXI‑Module</h2>
+<div class="section">
+<a href="./AXI.raw">AXI.raw</a>
+<a href="./axi_tmp.json">axi_tmp.json</a>
+<a href="./ID.html">AXI – Identität</a>
+<a href="./room.html">AXI – Raum</a>
+<a href="./index.html">AXI – Kern</a>
+</div>
+
+<h2>NC‑Achsen (1–9 / C / Z / Q)</h2>
+<div class="section">
+<a href="https://github.com/iki1uc/NC/tree/main/1">NC/1 – Achse 1</a>
+<a href="https://github.com/iki1uc/NC/tree/main/2">NC/2 – Achse 2</a>
+<a href="https://github.com/iki1uc/NC/tree/main/3">NC/3 – Achse 3</a>
+<a href="https://github.com/iki1uc/NC/tree/main/4">NC/4 – Achse 4</a>
+<a href="https://github.com/iki1uc/NC/tree/main/5">NC/5 – Achse 5</a>
+<a href="https://github.com/iki1uc/NC/tree/main/6">NC/6 – Achse 6</a>
+<a href="https://github.com/iki1uc/NC/tree/main/7">NC/7 – Achse 7</a>
+<a href="https://github.com/iki1uc/NC/tree/main/8">NC/8 – Achse 8</a>
+<a href="https://github.com/iki1uc/NC/tree/main/9">NC/9 – Achse 9</a>
+
+<a href="https://github.com/iki1uc/NC/tree/main/C">NC/C – Center</a>
+<a href="https://github.com/iki1uc/NC/tree/main/Z">NC/Z – Zustand</a>
+<a href="https://github.com/iki1uc/NC/tree/main/Q">NC/Q – Query</a>
+</div>
+
+<h2>RESPO‑Status</h2>
+<div class="section">
+<pre>
+ROOT   = TMP‑0
+ACHSE  = TMP‑A
+LAGE   = TMP‑LAGE
+PIPE   = aktiv
+
+SEQ.360 = D0 → D1 → D2 → D3 → D4 → D5 → D0
+</pre>
+</div>
+
+<h2>6D‑System</h2>
+<div class="section">
+<pre>
+D0 = ROOT
+D1 = ACHSE
+D2 = TMP
+D3 = LAGE
+D4 = laTER
+D5 = ORT
+</pre>
+</div>
+
+<h2>Frequenz 12e</h2>
+<div class="section">
+<pre>
+FREQ.12 =
+iki → bir → uc → LE → iki1uc → GO → sys → tem → AU → RA → TET → RIZ
+</pre>
+</div>
+
+<h2>NC‑9×9‑Matrix</h2>
+<div class="section">
+<pre>
+● ▲ ✦ ⊖ ⊕ ◇
+↗ ↘ ↔ ↕ ⟳ ⤴
+⊕ ⊗ ⊖ ⊙ ⚑ ⚡
+∞ ≡ ≠ ≈ ∴ ∵
+⌂ ⌁ ⌘ ⌖ ⌬ ⌿
+⧉ ⧗ ⧠ ⧙ ⧩ ⧫
+</pre>
+</div>
+
+<h2>PX‑SYM</h2>
+<div class="section">
+<pre>
+● = dunkel
+▲ = herb
+✦ = berry
+⊖ = entfernt
+⊕ = frei
+◇ = speicher
+↗ = move_up
+↘ = move_down
+⚑ = fix
+⚡ = impuls
+∞ = loop
+⊗ = gebunden
+○ = wasser
+△ = luft
+</pre>
+</div>
+
+</body>
+</html>
