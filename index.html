@@ -2,117 +2,103 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>AXI – MASTER‑ACHSE · iki1uc</title>
+<title>AXI – Systemkern</title>
 
 <style>
-    body {
-        background: #000;
-        color: #0f0;
-        font-family: monospace;
-        padding: 40px;
-    }
-
-    h1 {
-        color: #0f0;
-        letter-spacing: 4px;
-        margin-bottom: 30px;
-    }
-
-    .block {
-        background: #111;
-        border: 1px solid #333;
-        padding: 25px;
-        margin-bottom: 30px;
-        border-radius: 8px;
-    }
-
-    .title {
-        font-size: 22px;
-        color: #6cf;
-        margin-bottom: 10px;
-    }
-
-    a {
-        color: #6cf;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    pre {
-        background: #000;
-        border-left: 3px solid #6cf;
-        padding: 15px;
-        margin-top: 10px;
-        white-space: pre-wrap;
-    }
+body { background:#000; color:#0f0; font-family:monospace; padding:20px; padding-bottom:40px; }
+h1, h2 { color:#6cf; }
+a { color:#6cf; display:block; margin:6px 0; }
+pre { background:#111; border:1px solid #333; padding:10px; margin-bottom:20px; }
+.rot   { color:#ff4444; }
+.gruen { color:#44ff44; }
+.gelb  { color:#ffff44; }
+.section { margin-bottom:30px; }
 </style>
-</head>
 
+</head>
 <body>
 
-<h1>AXI – MASTER‑ACHSE · iki1uc</h1>
+<h1>AXI – Systemkern</h1>
 
-<div class="block">
-    <div class="title">AXI – Achsenkernsystem</div>
-    <p>AXI ist der zentrale Achsenkern der gesamten IKI‑Engine.</p>
-    <p>Es verbindet alle Achsen, Ebenen, Module und Systeme.</p>
+<div class="section">
+<pre>
+SYSTEM = AXI
+KONSTELLATION = TMP
+FREQ = 12e
+6D = D2
+360° = aktiv
+NC‑9x9 = bereit
+AXI‑RESPO = aktiv
+</pre>
 </div>
 
-<div class="block">
-    <div class="title">AXI‑Identität</div>
-    <p><a href="ID.html">→ AXI‑Identität öffnen</a></p>
+<h2>NC‑Ordner (1–9 / C / Z / Q)</h2>
+<div class="section">
+<a href="./NC/1/">NC/1 – Achse 1</a>
+<a href="./NC/2/">NC/2 – Achse 2</a>
+<a href="./NC/3/">NC/3 – Achse 3</a>
+<a href="./NC/4/">NC/4 – Achse 4</a>
+<a href="./NC/5/">NC/5 – Achse 5</a>
+<a href="./NC/6/">NC/6 – Achse 6</a>
+<a href="./NC/7/">NC/7 – Achse 7</a>
+<a href="./NC/8/">NC/8 – Achse 8</a>
+<a href="./NC/9/">NC/9 – Achse 9</a>
+
+<a href="./NC/C/">NC/C – Center</a>
+<a href="./NC/Z/">NC/Z – Zustand</a>
+<a href="./NC/Q/">NC/Q – Query</a>
 </div>
 
-<div class="block">
-    <div class="title">AXI‑DNA (Α64)</div>
-    <pre>
-AXI‑DNA = Α64
-Felder pro Achse = 64
-Achsenmatrix = 6×6
-Dimensionen = 6D
-Rotation = 360°
-Ausnutzung = 100%
-    </pre>
+<h2>AXI‑Module</h2>
+<div class="section">
+<a href="./AXI.raw">AXI.raw</a>
+<a href="./axi_tmp.json">axi_tmp.json</a>
+<a href="./ID.html">AXI – Identität</a>
+<a href="./room.html">AXI – Raum</a>
+<a href="./index.html">AXI – Kern</a>
 </div>
 
-<div class="block">
-    <div class="title">Achsenmatrix (6×6)</div>
-    <pre>
-X   Y   Z   T   S   MOVE
-STATE FLOW GEO FREQ INPUT OUTPUT
-SET  ANKER API alpha beta gamma
-    </pre>
+<h2>RESPO‑Status</h2>
+<div class="section">
+<pre>
+ROOT   = TMP‑0
+ACHSE  = TMP‑A
+LAGE   = TMP‑LAGE
+PIPE   = aktiv
+SEQ.360 = D0 → D1 → D2 → D3 → D4 → D5 → D0
+</pre>
 </div>
 
-<div class="block">
-    <div class="title">AXI‑Router</div>
-    <pre>
-AXI‑ATOR = aktiv
-TriAxiom = aktiv
-RESPO‑AXI‑LINK.NET = verbunden
-TMP‑Läufer = SYQ
-    </pre>
+<h2>NC‑9×9‑Matrix</h2>
+<div class="section">
+<pre>
+● ▲ ✦ ⊖ ⊕ ◇
+↗ ↘ ↔ ↕ ⟳ ⤴
+⊕ ⊗ ⊖ ⊙ ⚑ ⚡
+∞ ≡ ≠ ≈ ∴ ∵
+⌂ ⌁ ⌘ ⌖ ⌬ ⌿
+⧉ ⧗ ⧠ ⧙ ⧩ ⧫
+</pre>
 </div>
 
-<div class="block">
-    <div class="title">System‑Module</div>
-    <a href="../HEAD/index.html">HEAD</a>
-    <a href="../HTML/index.html">HTML</a>
-    <a href="../body/index.html">body</a>
-    <a href="../style/index.html">style</a>
-    <a href="../HELP/index.html">HELP</a>
-    <a href="../FREQ/index.html">FREQ</a>
-    <a href="../GEO/index.html">GEO</a>
-    <a href="../ALLin/index.html">ALLin</a>
-    <a href="../ALLout/index.html">ALLout</a>
-    <a href="../SETter/index.html">SETter</a>
-    <a href="../ANKER/index.html">ANKER</a>
-    <a href="../API/index.html">API</a>
-</div>
-
-<div class="block">
-    <div class="title">AXI‑tmp.json</div>
-    <p><a href="axi_tmp.json">→ JSON öffnen</a></p>
+<h2>PX‑SYM</h2>
+<div class="section">
+<pre>
+● = dunkel
+▲ = herb
+✦ = berry
+⊖ = entfernt
+⊕ = frei
+◇ = speicher
+↗ = move_up
+↘ = move_down
+⚑ = fix
+⚡ = impuls
+∞ = loop
+⊗ = gebunden
+○ = wasser
+△ = luft
+</pre>
 </div>
 
 </body>
